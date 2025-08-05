@@ -19,5 +19,7 @@ document.getElementById('check-btn').addEventListener('click', function(e) {
         result.textContent = `${inputText} is not a palindrome.`;
     }
 
+    document.getElementById('text-input').value = "";
+
 
 });
