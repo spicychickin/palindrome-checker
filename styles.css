@@ -1,5 +1,5 @@
 body {
-    background-color: #2F5249;
+    background-color: #213448;
     min-height: 100vh;
     margin: 0;
     font-family: 'IBM Plex Sans', Arial, sans-serif;
@@ -12,7 +12,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
     padding: 0 10px;
     display: flex;
     flex-direction: column;
@@ -25,17 +25,24 @@ body {
     display: block;
 }
 
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
 .palindrome-box, form.palindrome-box {
     background-color: #fff;
     color: #191970;
     border-radius: 15px;
-    padding: 35px 40px 35px 40px;
+    padding: 38px 43px 38px 43px;
     margin-bottom: 24px;
     min-width: 320px;
     max-width: 400px;
     text-align: center;
     font-size: 1.13rem;
-    box-shadow: 0 5px 12px rgba(131, 208, 116, 0.23);
+    box-shadow: 0 5px 8px #328E6E;
 }
 
 label {
@@ -43,4 +50,34 @@ label {
     display: block;
     margin-bottom: 14px;
     font-weight: 300;
+}
+
+input[type="text"] {
+    width: 215px;
+    margin-right: 14px;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #5409DA;
+    padding: 8px 8px 3px 8px;
+    color: #23234c;
+    transition: border-bottom 0.19s;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-bottom: 3.5px solid #5409DA;
+    background-color: #f7f7ff;
+}
+
+#check-btn {
+    padding: 11px 28px;
+    border-radius: 17px;
+    border: none;
+    background: #5409DA;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+
 }
