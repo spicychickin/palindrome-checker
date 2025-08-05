@@ -4,19 +4,24 @@ body {
     margin: 0;
     font-family: 'IBM Plex Sans', Arial, sans-serif;
     color: #ffffff;
-}
-
-.container {
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo img {
     max-width: 300px;
-    margin: 40px auto 18px auto;
+    margin: 0 auto 0 auto;
     display: block;
 }
 
@@ -24,11 +29,18 @@ body {
     background-color: #fff;
     color: #191970;
     border-radius: 15px;
-    padding: 2rem 2.2rem 1.7rem 2.2rem;
+    padding: 35px 40px 35px 40px;
     margin-bottom: 24px;
     min-width: 320px;
     max-width: 400px;
     text-align: center;
     font-size: 1.13rem;
-    box-shadow: 0 6px 0 #1b1b32;
+    box-shadow: 0 5px 12px rgba(131, 208, 116, 0.23);
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 14px;
+    font-weight: 300;
 }
