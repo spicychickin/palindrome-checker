@@ -32,11 +32,15 @@ h1 {
     letter-spacing: 2px;
 }
 
+.palindrome-container {
+    width: 90%;
+}
+
 .palindrome-box, form.palindrome-box {
     background-color: #fff;
     color: #191970;
-    border-radius: 15px;
-    padding: 38px 43px 38px 43px;
+    border-radius: 20px;
+    padding: 30px 43px 30px 43px;
     margin-bottom: 24px;
     min-width: 320px;
     max-width: 400px;
@@ -54,6 +58,7 @@ label {
 
 input[type="text"] {
     width: 215px;
+    margin-top: 10px;
     margin-right: 14px;
     font-size: 17px;
     background: transparent;
@@ -66,11 +71,6 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
-input[type="text"]:focus {
-    border-bottom: 3.5px solid #5409DA;
-    background-color: #f7f7ff;
-}
-
 #check-btn {
     padding: 11px 28px;
     border-radius: 17px;
@@ -79,5 +79,43 @@ input[type="text"]:focus {
     color: #fff;
     font-weight: 300;
     font-size: 16px;
+    cursor: pointer;
+    margin-top: 0;
+    vertical-align: middle;
+}
 
+#check-btn:hover {
+    background: #3700a3;
+}
+
+.palindrome-box form > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info {
+    background: #1A2A80;
+    color: #fff;
+    max-width: 430px;
+    margin: 8px auto 0 auto;
+    padding: 22px 26px 22px 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px 0 rgba(0,0,0,0.16);
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    line-height: 1.38;
+    font-size: 1.15rem;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+
+}
+
+.info-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+    line-height: 1;
 }
